@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.center-text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tool_title {
+    font-size: 2em;
+    color: #ffffff; /* Dark blue for the title */
+}
+
+.desc_tool {
+    color: #ffffff; /* A slightly lighter shade of blue for the description */
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 500px);
+}
+
+.bg-outer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue for the label */
+}
+
+.password-container input {
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.password-container input:focus {
+    outline: none;
+    border-color: #3498db; /* Bright blue border on focus */
+}
+
+.show {
+    cursor: pointer;
+    color: #3498db; /* Bright blue for the toggle button */
+    margin-bottom: 10px;
+}
+
+.strength-meter {
+    margin-top: 10px;
+}
+
+.strength-text {
+    font-weight: bold;
+    color: #000000; /* Dark blue for the strength text */
+}
+
+.meter {
+    background-color: #e0e0e0; /* Light gray for the meter background */
+    border-radius: 4px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.meter-fill-grey {
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.time-to-crack {
+    font-weight: normal;
+    color: #000000; /* Grey for the time to crack text */
+}

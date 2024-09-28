@@ -1,0 +1,206 @@
+/* Overall page styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #1b3a57, #0b2341);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scanner-container {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  justify-content: space-between; /* Space between the details and scan box */
+  align-items: flex-start; /* Align to the top */
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.details {
+  flex: 1; /* Take up equal space */
+  margin-right: 30px; /* Space between details and scan box */
+}
+
+.details h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.details p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.scan-box {
+  background-color: #ffffffe6;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  max-width: 550px;
+  width: 100%;
+}
+
+.scan-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.light-scan, .deep-scan {
+  background-color: #75acff;
+  color: #1a2a4a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.light-scan:hover, .deep-scan:hover {
+  background-color: #166afc;
+}
+
+input[type="url"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #030303;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.consent input[type="checkbox"] {
+  appearance: none;
+  background-color: #ffffff; /* Set background to white */
+  border: 1px solid #1a2a4a; /* Border to match the label color */
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.consent input[type="checkbox"]:checked::before {
+  content: '\2714'; /* Checkmark symbol */
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  font-size: 15px;
+  color: #1a2a4a; /* Checkmark color */
+}
+
+.scan-button {
+  background-color: #ffc107;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.scan-button:hover {
+  background-color: #ffb300;
+}
+/* Summary report styling */
+.results {
+  background-color: #f8f9fa; /* Light background for the results area */
+  color: #000000; /* Dark text for readability */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.results h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1a2a4a; /* Heading color */
+}
+
+.results .summary {
+  margin-bottom: 20px;
+}
+
+.results .summary p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.results .alert-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results .alert-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results .alert-list li:last-child {
+  border-bottom: none;
+}
+
+.results .alert-list li h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #e53935; /* Color for high risk alerts */
+}
+
+.results .alert-list li p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.results .alert-list .risk-low {
+  color: #4caf50; /* Low risk alert color */
+}
+
+.results .alert-list .risk-medium {
+  color: #ff9800; /* Medium risk alert color */
+}
+
+.results .alert-list .risk-high {
+  color: #e53935; /* High risk alert color */
+}
+
+.results .alert-list .risk-informational {
+  color: #2196f3; /* Informational risk alert color */
+}
+
+
+/* Add this to your home_page.css */
+.summary {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Dark text color for contrast */
+  margin-top: 20px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+.summary h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  color: #1a2a4a; 
+}
